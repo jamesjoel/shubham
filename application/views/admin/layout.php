@@ -54,7 +54,7 @@
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="<?php echo site_url('admin/logout'); ?>" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="<?php echo site_url('admin/dashboard/logout'); ?>" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
@@ -123,6 +123,14 @@
         <li>
           <a href="<?php echo site_url('admin/product'); ?>">
             <i class="fa fa-th"></i> <span>Products</span>
+            <span class="pull-right-container">
+              <small class="label pull-right bg-green">new</small>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="<?php echo site_url('admin/category'); ?>">
+            <i class="fa fa-th"></i> <span>Category</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
             </span>

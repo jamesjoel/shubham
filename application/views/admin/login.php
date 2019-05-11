@@ -45,7 +45,7 @@
             <h3>Admin Login</h3>
           </div>
           <div class="panel-body">
-            <form action="<?php echo site_url('cpanel/auth') ?>" method="post">
+            <form action="<?php echo site_url('admin/index/auth') ?>" method="post">
               <div class="form-group">
                 <label>Username</label>
                 <input name="username" type="text" class="form-control" value="<?php echo $this->session->flashdata('username') ?>">

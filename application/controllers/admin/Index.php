@@ -1,5 +1,5 @@
 <?php
-class Cpanel extends CI_Controller{
+class Index extends CI_Controller{
 
 	function __construct()
 	{
@@ -26,19 +26,19 @@ class Cpanel extends CI_Controller{
 				$this->session->set_userdata("name", $data['name']);
 				$this->session->set_userdata("is_admin_logged_in", true);
 				$this->session->set_userdata("type", $data['type']);
-				redirect("admin");
+				redirect("admin/dashboard");
 			}
 			else
 			{
 				$this->session->set_flashdata("username", $u);
 				$this->session->set_flashdata("msg","This Password is Not Mached");
-				redirect("cpanel");
+				redirect("admin/index");
 			}
 		}
 		else
 		{
 			$this->session->set_flashdata("msg","This Username/Mobile Number Not Mached");
-			redirect("cpanel");
+			redirect("admin/index");
 		}
 	}
 }
